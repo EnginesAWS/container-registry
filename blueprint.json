@@ -1,0 +1,18 @@
+{
+	"identifier": "container-registry",
+	"about": {
+		"title": "AWS Container Registry",
+		"explanation": "An application blueprint for defining an AWS container registry"
+	},
+	"compute_service": {
+		"default": {
+			"identifier": "container_registry"
+		}
+	},
+	"binding_target": {
+		"configuration": {
+		      "name": "",
+		      "repositorypolicy": ""		      
+		}
+	}
+}
