@@ -1,0 +1,50 @@
+first tag image as
+
+910000000.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug
+ 
+commandline would be docker tag container_id 910122582945.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug 
+but swiply can do this
+
+910 ... is the AWS account ID   user must set somewhere  (see element for actual number)
+
+ap-southeast-2 is the region
+
+demo-repo is the name of the ecr registry
+
+doug is the image name
+
+
+now the hard part
+This is how I did it but I will sort out some ruby for you (or see if it is possible)
+
+install aws-cli
+aws configure
+use the creds I supplied early
+set the region (can be overiden by tf)
+
+run note all the `  and " and ' are needed
+ 
+ `aws ecr get-login | sed 's|https://||' |sed  "/-e none/s///"`
+ 
+ 
+ docker push 9000000000.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug
+ note Swipely can do this
+ 
+ 
+ 
+ | docker login --username AWS --password-stdin xxxxxxxx.dkr.ecr.ap-south-1.amazonaws.com
+ 
+ Ruby stuff
+ https://docs.aws.amazon.com/sdk-for-ruby/v3/api/index.html
+ 
+ gem install aws-sdk  	aws-sdk-ecr 
+ 
+ do the aws-sdk equiv of  
+ above = aws ecr get-login-password --region ap-southeast-2
+ then use the returned value as the password in a docker login 
+ docker.login --username AWS --password $above xxxxxxxx.dkr.ecr.ap-southeast-2.amazonaws.com
+ then 
+ docker.push 9000000000.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug
+ 
+ 
+ 
