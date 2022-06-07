@@ -2,7 +2,7 @@
 	"identifier": "container-registry",
 	"about": {
 		"title": "AWS Container Registry",
-		"explanation": "An application blueprint for defining an AWS container registry"
+		"explanation": "An elementary blueprint for defining an AWS container registry"
 	},
 	"compute_service": {
 		"default": {
