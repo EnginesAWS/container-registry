@@ -11,8 +11,7 @@
 	},
 	"binding_target": {
 		"configuration": {
-		      "name": "",
-		      "repositorypolicy": ""		      
+		      "image_tag_mutability": "IMMUTABLE"
 		}
 	}
 }
