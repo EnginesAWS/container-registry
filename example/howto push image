@@ -15,7 +15,7 @@ demo-repo is the name of the ecr registry
 
 doug is the image name
 
-create a script based pn the_script.sh with the values AWS_Account_ID Region repo_name and image_name set
+create a script based on the_script.sh with the values AWS_Account_ID Region repo_name and image_name set
 File.chmod(0770,"file_path")
 
 
