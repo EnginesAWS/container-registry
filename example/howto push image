@@ -2,7 +2,7 @@ first tag image as
 
 910000000.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug
  
-commandline would be docker tag container_id 910122582945.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug 
+commandline would be docker tag image_id 900000.dkr.ecr.ap-southeast-2.amazonaws.com/demo-repo:doug 
 but swiply can do this
 
 910 ... is the AWS account ID   user must set somewhere  (see element for actual number)
