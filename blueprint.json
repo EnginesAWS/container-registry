@@ -8,10 +8,5 @@
 		"default": {
 			"identifier": "container_registry"
 		}
-	},
-	"binding_target": {
-		"configuration": {
-		      "image_tag_mutability": "IMMUTABLE"
-		}
 	}
 }
